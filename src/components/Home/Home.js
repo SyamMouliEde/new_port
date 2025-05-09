@@ -4,6 +4,7 @@ import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import DeveloperCard from "./Codedev";
 
 function Home() {
   return (
@@ -12,7 +13,7 @@ function Home() {
         <Particle />
         <Container className="home-content">
           <Row>
-            <Col md={7} className="home-header">
+            <Col md={6} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hi There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
@@ -21,22 +22,28 @@ function Home() {
               </h1>
 
               <h1 className="heading-name">
-                I'M
+                This is
                 <strong className="main-name"> Syam Mouli Ede</strong>
               </h1>
-
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <h1 className="heading-name">
+                I'm a Professional
+</h1>
+              <div style={{paddingLeft:46,textAlign: "left" }}>
                 <Type />
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
+            <Col md={5} lg={6} sm={12} style={{ paddingBottom: 20 }}>
+              {/* <img
                 src={homeLogo}
                 alt="home pic"
                 className="img-fluid"
                 style={{ maxHeight: "450px" }}
-              />
+
+              /> */}
+              <div>
+<DeveloperCard/>
+</div>
             </Col>
           </Row>
         </Container>
